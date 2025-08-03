@@ -1,0 +1,41 @@
+// app global css in SCSS form
+
+/**
+ * Global Dark Mode Transitions
+ * Provides smooth transitions when switching between light and dark themes
+ */
+body {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+// Smooth transitions for all elements during theme changes
+* {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+// Ensure cards and surfaces have smooth transitions
+.q-card,
+.q-header,
+.q-drawer,
+.q-toolbar,
+.q-page {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+// Override transition for elements that shouldn't animate
+.q-btn,
+.q-icon,
+input,
+textarea {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.2s ease;
+}
