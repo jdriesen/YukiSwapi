@@ -18,6 +18,7 @@ export default {
   language: 'Language',
   columns: 'Columns', // Column selection dropdown label
   retry: 'Retry', // Retry button label
+  welcome: 'Welcome to {appname}',
 
   // Column selection dropdown
   noColumnsSelected: 'No columns selected',

@@ -18,6 +18,7 @@ export default {
   language: 'Taal',
   columns: 'Kolommen', // Column selection dropdown label
   retry: 'Opnieuw proberen', // Retry button label
+  welcome: 'Welkom bij {appname}',
 
   // Column selection dropdown
   noColumnsSelected: 'Geen kolommen geselecteerd',

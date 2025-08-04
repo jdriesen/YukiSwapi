@@ -2,7 +2,7 @@
   <q-page class="flex flex-center">
     <div class="q-pa-xl">
       <div class="text-center q-mb-xl">
-        <h1 class="text-h2 text-weight-bold q-mb-md">Welcome to YukiSwapi</h1>
+        <h1 class="text-h2 text-weight-bold q-mb-md">{{ welcomeText }}</h1>
         <p class="text-h6 text-grey-7">Explore the Star Wars Universe</p>
       </div>
 
@@ -75,6 +75,9 @@ const categories = computed<Category[]>(() => {
     }
   })
 })
+
+// Generate reactive welcome text - will update when language changes
+const welcomeText = computed(() => t('common.welcome', { appname: 'YukiSwapi' }))
 </script>
 
 <style lang="scss" scoped>
