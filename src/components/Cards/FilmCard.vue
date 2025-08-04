@@ -39,7 +39,6 @@
 
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import CardItem from './CardItem.vue'
 import { getResourceIcon, getResourceColor } from '~/config/resource-icons'
 import type { Film } from '~/types'
 
